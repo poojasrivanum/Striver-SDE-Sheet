@@ -1,0 +1,54 @@
+import java.util.*;
+
+class Solution {
+
+    public List<List<Integer>> generate(int numRows) {
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        for(int i = 0; i < numRows; i++) {
+
+            List<Integer> row = new ArrayList<>();
+
+            // First element
+            row.add(1);
+
+            // Middle elements
+            for(int j = 1; j < i; j++) {
+
+                int value = ans.get(i - 1).get(j - 1)
+                          + ans.get(i - 1).get(j);
+
+                row.add(value);
+            }
+
+            // Last element
+            if(i > 0) {
+                row.add(1);
+            }
+
+            ans.add(row);
+        }
+
+        return ans;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Solution obj = new Solution();
+
+        List<List<Integer>> result = obj.generate(5);
+
+        for(List<Integer> row : result) {
+
+            for(int num : row) {
+                System.out.print(num + " ");
+            }
+
+            System.out.println();
+        }
+    }
+}
