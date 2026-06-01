@@ -1,5 +1,4 @@
 # Striver-SDE-Sheet
-DSA interview preparation using Striver's SDE Sheet.
 Tracking my DSA preparation using Striver's SDE Sheet.
 ## Progress
 ### Day 1 Arrays
