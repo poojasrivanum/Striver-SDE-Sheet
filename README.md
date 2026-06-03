@@ -5,6 +5,9 @@ Tracking my DSA preparation using Striver's SDE Sheet.
 - [x] Set Matrix Zeroes
 - [x] Pascal's Triangle
 - [x] Next Permutation
-- [ ] Kadane's Algorithm
-- [ ] Sort Colors
-- [ ] Stock Buy and Sell
+- [x] Kadane's Algorithm
+- [x] Sort Colors
+- [x] Stock Buy and Sell
+- [x] Rotate matrix by 90 degrees
+- [x] Merge Overlapping Subintervals
+- [x] Merge two sorted arrays without extra space
